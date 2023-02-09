@@ -1,0 +1,26 @@
+
+Impurity measurement used: C4.5 .
+
+Info(T) = -(3/4)log(3/4)-(1/4)log(1/4) = 0.8113
+
+For the attribute Income,
+Info(T_high) = -(1/2)log(1/2)-(1/2)log(1/2) = 1.0000
+Info(T_low) = -(1/1)log(1/1)-(0/1)log(0/1) = 0.0000
+Info(T_medium) = -(1/1)log(1/1)-(0/1)log(0/1) = 0.0000
+Info(Income, T) =  (2/4)*1.0000 + (1/4)*0.0000 + (1/4)*0.0000 = 0.5000
+SplitInfo(Income) =  [-(2/4)log(2/4)] + [-(1/4)log(1/4)] + [-(1/4)log(1/4)] = 1.5000
+Gain(Income, T) = (0.8113 - 0.5000) / 1.5000 = 0.2075
+
+For the attribute Gender,
+Info(T_female) = -(2/2)log(2/2)-(0/2)log(0/2) = 0.0000
+Info(T_male) = -(1/2)log(1/2)-(1/2)log(1/2) = 1.0000
+Info(Gender, T) =  (2/4)*0.0000 + (2/4)*1.0000 = 0.5000
+SplitInfo(Gender) =  [-(2/4)log(2/4)] + [-(2/4)log(2/4)] = 1.0000
+Gain(Gender, T) = (0.8113 - 0.5000) / 1.0000 = 0.3113
+
+For the attribute Education,
+Info(T_bachelor) = -(3/4)log(3/4)-(1/4)log(1/4) = 0.8113
+Info(Education, T) =  (4/4)*0.8113 = 0.8113
+SplitInfo(Education) =  [-(4/4)log(4/4)] = 0.0000
+SplitInfo is 0.
+
